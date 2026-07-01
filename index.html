@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -254,6 +255,31 @@
   /* reveal animation */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
   .reveal.in{opacity:1;transform:none;}
+
+  /* ---------- responsive / mobile ---------- */
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:44px;text-align:center;}
+    .hero-copy{display:flex;flex-direction:column;align-items:center;}
+    .hero p.lead{max-width:52ch;}
+    .cta-row,.trust{justify-content:center;}
+  }
+  @media(max-width:760px){
+    .hero{padding:52px 0 62px;}
+    section{padding:60px 0;}
+    .sec-head{margin-bottom:32px;}
+    .priv-grid,.state-grid{gap:34px;}
+    .about-card{padding:28px 22px;}
+    .phone{width:min(270px,80vw);height:auto;aspect-ratio:280/570;}
+    #statesCloud{order:2;}
+    .lanes{height:34px;}
+  }
+  @media(max-width:440px){
+    .wrap{padding:0 18px;}
+    .store{min-width:0;flex:1 1 100%;justify-content:center;}
+    .hero h1{font-size:2.2rem;}
+    .nav-row{height:58px;}
+    .brand{font-size:1.05rem;}
+  }
 
   @media(prefers-reduced-motion:reduce){
     *{animation:none !important;scroll-behavior:auto;}
