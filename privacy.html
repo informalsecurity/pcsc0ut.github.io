@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — LogMyDrive</title>
+<meta name="description" content="LogMyDrive's privacy policy: what the app does and doesn't collect, how location is used, and why your family's driving data stays on your phone." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0B1020; --ink-2:#0E1426; --slab:#141C30; --slab-2:#1A2440; --line:#27324F;
+    --blue:#2E7DF6; --sky:#5EC2FF; --mint:#38D39F; --amber:#FFB23E;
+    --paper:#EAF0FF; --muted:#8A97B5; --danger:#FF6B6B; --r:18px;
+    --display:"Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --body:"Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --mono:ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:var(--body);color:var(--paper);background:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:var(--sky);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;margin:0;letter-spacing:-0.01em;color:var(--paper);}
+  p{margin:0 0 14px;}
+  ul{margin:0 0 14px;padding-left:22px;}
+  li{margin-bottom:6px;}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px;}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--sky);}
+
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+    background:rgba(11,16,32,.82);border-bottom:1px solid var(--line);}
+  .nav-row{max-width:820px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:1.1rem;}
+  .back{font-size:.9rem;color:var(--muted);}
+  .back:hover{color:var(--paper);}
+
+  main{padding:56px 0 90px;}
+  .title-block{margin-bottom:40px;}
+  .title-block h1{font-size:clamp(2rem,4vw,2.6rem);margin:12px 0 10px;}
+  .updated{color:var(--muted);font-size:.92rem;}
+
+  .tldr{background:linear-gradient(150deg,rgba(56,211,159,.14),rgba(56,211,159,.03));
+    border:1px solid rgba(56,211,159,.28);border-radius:var(--r);padding:22px 24px;margin:0 0 44px;}
+  .tldr h2{font-size:1.05rem;color:var(--mint);margin-bottom:10px;}
+  .tldr ul{padding-left:20px;margin-bottom:0;}
+  .tldr li{color:var(--paper);font-size:.97rem;}
+
+  nav.toc{background:var(--slab);border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;margin-bottom:48px;}
+  nav.toc div.label{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+  nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:24px;}
+  nav.toc li{font-size:.92rem;margin-bottom:6px;break-inside:avoid;}
+  @media(max-width:560px){nav.toc ol{columns:1;}}
+
+  section.policy{margin-bottom:40px;padding-top:8px;}
+  section.policy h2{font-size:1.35rem;margin-bottom:14px;padding-top:8px;border-top:1px solid var(--line);padding-top:24px;}
+  section.policy:first-of-type h2{border-top:none;padding-top:0;}
+  section.policy p, section.policy li{color:#C7D0E8;}
+  section.policy strong{color:var(--paper);}
+
+  .callout{background:var(--slab);border:1px solid var(--line);border-left:3px solid var(--sky);
+    border-radius:10px;padding:14px 18px;margin:14px 0;font-size:.93rem;color:var(--muted);}
+
+  .placeholder{color:var(--amber);font-style:italic;}
+
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.88rem;}
+  .foot-row{max-width:820px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;
+    align-items:center;gap:16px;flex-wrap:wrap;}
+  .foot-links a{color:var(--muted);margin-left:18px;}
+  .foot-links a:hover{color:var(--paper);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="index.html">
+      <svg width="24" height="22" viewBox="0 0 100 92" aria-hidden="true">
+        <path d="M 6 76 C 6 71, 8 68, 12 68 C 12.5 59, 17 52.5, 25 49 C 27 43, 30 38, 34.5 34.5 C 38 30.5, 42 28, 47 28 L 58 28 C 64 28, 68.5 31, 71 36 L 76 49 C 84 52, 90.5 58.5, 91.5 68 C 95.5 68, 98 71, 98 76 C 98 79, 96 81, 93 81 L 87.5 81 C 87.5 73.5, 81.7 68, 74.5 68 C 67.3 68, 61.5 73.5, 61.5 81 L 42.5 81 C 42.5 73.5, 36.7 68, 29.5 68 C 22.3 68, 16.5 73.5, 16.5 81 L 11 81 C 8 81, 6 79, 6 76 Z" fill="#0E1426"/>
+        <path d="M 30.5 48.5 C 32 43, 35.5 38.5, 40 35.5 C 41.5 34.5, 43 34, 45 34 L 58 34 C 61 34, 63.5 36, 65 39 L 69 48.5 C 63 46.5, 56 45.5, 50 45.5 C 43.5 45.5, 36.5 46.5, 30.5 48.5 Z" fill="#5EC2FF"/>
+        <circle cx="29.5" cy="81" r="10" fill="#0E1426"/><circle cx="29.5" cy="81" r="4.2" fill="#0B1020"/>
+        <circle cx="74.5" cy="81" r="10" fill="#0E1426"/><circle cx="74.5" cy="81" r="4.2" fill="#0B1020"/>
+        <ellipse cx="93.25" cy="69.5" rx="2.75" ry="2" fill="#FFB23E"/>
+        <ellipse cx="9" cy="69.5" rx="2" ry="1.7" fill="#E4574C"/>
+      </svg>
+      LogMyDrive
+    </a>
+    <a class="back" href="index.html">← Back to site</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="title-block">
+      <span class="eyebrow">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: July 25, 2026</p>
+    </div>
+
+    <div class="tldr">
+      <h2>The short version</h2>
+      <ul>
+        <li>LogMyDrive has no accounts, no login, and no servers of its own.</li>
+        <li>Everything you enter — drivers, drives, routes, skills, notes — is stored only on your phone.</li>
+        <li>Location is used only while you're actively tracking a drive, and it never leaves your device unless you personally export a report or backup and choose where to send it.</li>
+        <li>We don't run ads, don't use analytics or tracking SDKs, and don't sell data — there's nothing to sell.</li>
+        <li>Uninstalling the app deletes everything, permanently.</li>
+      </ul>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <div class="label">On this page</div>
+      <ol>
+        <li><a href="#collect">Information we collect</a></li>
+        <li><a href="#not-collect">Information we don't collect</a></li>
+        <li><a href="#location">Location data, specifically</a></li>
+        <li><a href="#photos">Camera &amp; photo library</a></li>
+        <li><a href="#purchases">In-app purchases</a></li>
+        <li><a href="#sharing">Data sharing</a></li>
+        <li><a href="#storage">Storage &amp; security</a></li>
+        <li><a href="#retention">Retention &amp; deletion</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </nav>
+
+    <section class="policy">
+      <p>LogMyDrive ("LogMyDrive," "we," "us," or "our") is a mobile app that helps families track supervised
+      practice-driving hours for a learner's permit. This policy explains what information the app handles, why,
+      and — just as importantly — what it deliberately does not collect. LogMyDrive was built to be usable by a
+      family without ever requiring them to trust us with their data, and this policy is written to reflect that
+      design, not to justify around it.</p>
+    </section>
+
+    <section class="policy" id="collect">
+      <h2>1. Information we collect</h2>
+      <p>LogMyDrive does not require an account, so we do not collect your name, email address, or any identity
+      information to use the app. The information below is entered by you and <strong>stored locally in the app's
+      database on your own device</strong> — it is not transmitted to us or to any third party as part of normal use.</p>
+      <ul>
+        <li><strong>Driver profiles</strong> — a name, state, permit dates, and guardian name you enter for each driver.</li>
+        <li><strong>Optional driver photo</strong> — if you choose to add one, taken with the camera or picked from your photo library.</li>
+        <li><strong>Drive records</strong> — the date, time, duration, distance, and GPS route of each logged drive, along with any category tags, supervisor name, or notes you add.</li>
+        <li><strong>Skill checklist entries</strong> — progress notes you record for driving skills like parking or highway merging.</li>
+        <li><strong>App settings</strong> — preferences like light/dark mode, backup frequency, and your Pro purchase status.</li>
+      </ul>
+    </section>
+
+    <section class="policy" id="not-collect">
+      <h2>2. Information we don't collect</h2>
+      <p>To be direct about it, LogMyDrive does not collect, and has no mechanism to collect:</p>
+      <ul>
+        <li>Your name, email address, phone number, or any account credentials — there is no account.</li>
+        <li>Advertising identifiers, analytics events, crash telemetry, or usage tracking of any kind.</li>
+        <li>Contacts, browsing history, or data from other apps.</li>
+        <li>Any data at all from a server, because LogMyDrive doesn't operate one. There is nothing for us to be
+        breached, subpoenaed for, or accidentally leave public — the data genuinely never reaches us.</li>
+      </ul>
+    </section>
+
+    <section class="policy" id="location">
+      <h2>3. Location data, specifically</h2>
+      <p>Because this is the one permission families are usually most cautious about, here is exactly how it works:</p>
+      <ul>
+        <li>LogMyDrive requests location access so it can record the route, distance, and timing of a supervised
+        drive, and so it can automatically detect whether a drive happened at night (using sunset/sunrise times
+        for your location — calculated on your device, not looked up online).</li>
+        <li>Location is recorded only while a drive is actively being tracked — from the moment you tap
+        <strong>Start Drive</strong> to the moment it ends.</li>
+        <li>If you enable the optional <strong>auto-stop</strong> setting, the app may continue checking your
+        location in the background for a short time after you've stopped moving, solely to detect that the drive
+        has ended and prompt you (or save it automatically) — this is still tied to an active, in-progress drive,
+        never a general background tracking mode.</li>
+        <li>Recorded routes are stored in the app's local database like any other drive detail. They are not
+        transmitted anywhere automatically, are not used for advertising, and are not linked to any identity we
+        hold — because we don't hold one.</li>
+      </ul>
+    </section>
+
+    <section class="policy" id="photos">
+      <h2>4. Camera &amp; photo library</h2>
+      <p>If you choose to add a profile photo for a driver, LogMyDrive requests camera or photo library access at
+      that moment. The photo is copied into the app's local storage and used only to display that driver's
+      profile picture in the app. It is not uploaded, analyzed, or shared.</p>
+    </section>
+
+    <section class="policy" id="purchases">
+      <h2>5. In-app purchases</h2>
+      <p>LogMyDrive offers a one-time "Pro" purchase to unlock additional features. Purchases are handled entirely
+      by Apple's App Store (or Google Play, on Android) through their standard in-app purchase systems.
+      <strong>We never see or store your payment information</strong> — no card number, billing address, or
+      similar details pass through LogMyDrive at any point. The app only receives confirmation of whether the
+      purchase was completed, which it stores locally to know the feature is unlocked.</p>
+    </section>
+
+    <section class="policy" id="sharing">
+      <h2>6. Data sharing</h2>
+      <p>We do not sell, rent, or share your data with third parties, because we do not have access to it in the
+      first place. The only ways data ever leaves your device are actions <strong>you</strong> initiate:</p>
+      <ul>
+        <li><strong>Exporting a PDF report or a state-formatted log sheet</strong> — you choose where it goes
+        (save it, print it, share it via Messages, email, AirDrop, etc.) using your device's standard share sheet.</li>
+        <li><strong>Exporting a backup</strong> — a full backup of your data as a file you save wherever you
+        choose (iCloud Drive, Google Drive, Files, email, etc.). This, too, uses your device's own share sheet;
+        LogMyDrive does not have its own storage to send it to.</li>
+      </ul>
+      <div class="callout">Automatic local backup snapshots, if enabled, stay on your device (and are included
+      in your phone's own device backup, e.g. iCloud). They are not uploaded by LogMyDrive itself.</div>
+    </section>
+
+    <section class="policy" id="storage">
+      <h2>7. Storage &amp; security</h2>
+      <p>All app data is stored in a local database on your device, protected by your device's own security (such
+      as its passcode and encryption). Because there is no server component, there is no central database of
+      LogMyDrive users or their driving data to secure, and no cloud infrastructure that could be compromised on
+      our end.</p>
+    </section>
+
+    <section class="policy" id="retention">
+      <h2>8. Retention &amp; deletion</h2>
+      <p>Your data is retained on your device for as long as the app is installed, or until you delete it within
+      the app. <strong>Uninstalling LogMyDrive permanently deletes all of its data</strong>, including drivers,
+      drives, and any local backup snapshots — this is standard behavior for how apps store data on iOS and
+      Android, and it means there is nothing left over on your device or anywhere else after you remove the app.
+      If you want to keep a copy first, use the app's Export feature before uninstalling.</p>
+    </section>
+
+    <section class="policy" id="children">
+      <h2>9. Children's privacy</h2>
+      <p>LogMyDrive is intended to be used by a parent or guardian together with a teen learner driver. The app
+      does not knowingly collect personal information from anyone, including children, because it does not
+      collect personal information from anyone, full stop — nothing entered into the app is transmitted off the
+      device. If you have questions about how the app fits into your family's use with a minor, contact us using
+      the details below.</p>
+    </section>
+
+    <section class="policy" id="choices">
+      <h2>10. Your choices</h2>
+      <ul>
+        <li><strong>Location:</strong> you can decline or later revoke location permission in your device
+        settings. Without it, GPS drive tracking won't work, but you can still log drives manually.</li>
+        <li><strong>Camera/Photos:</strong> entirely optional; skip it and driver profiles simply show initials
+        instead of a photo.</li>
+        <li><strong>Notifications:</strong> you can disable reminder notifications in your device settings at
+        any time.</li>
+        <li><strong>Deleting your data:</strong> delete a driver profile within the app, or uninstall the app
+        to remove everything at once.</li>
+      </ul>
+    </section>
+
+    <section class="policy" id="changes">
+      <h2>11. Changes to this policy</h2>
+      <p>If this policy changes, we'll update the "Last updated" date at the top of this page. Since the app has
+      no way to reach you directly (again — no accounts, no push notifications tied to identity), we'd encourage
+      checking back here occasionally if you'd like to stay current, though our intent is for this policy to stay
+      simple because the app's actual behavior stays simple.</p>
+    </section>
+
+    <section class="policy" id="contact">
+      <h2>12. Contact us</h2>
+      <p>Questions about this policy or how LogMyDrive handles data are welcome any time:</p>
+      <p><a href="mailto:support@logmydrive.org">support@logmydrive.org</a></p>
+      <div class="callout">This policy describes LogMyDrive's actual technical behavior as accurately as we can
+      state it. It's provided for transparency and to meet app store requirements, and isn't a substitute for
+      your own legal advice if you need something tailored to a specific jurisdiction or use case.</div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="foot-row">
+    <span>© <span id="yr"></span> LogMyDrive</span>
+    <div class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#support">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
